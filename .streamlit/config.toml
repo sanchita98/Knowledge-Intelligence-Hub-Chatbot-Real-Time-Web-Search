@@ -1,0 +1,13 @@
+[theme]
+primaryColor = "#a855f7"              # Accent (buttons, toggles)
+backgroundColor = "#0f172a"           # Main background
+secondaryBackgroundColor = "#1e293b"  # Sidebar & cards
+textColor = "#f8fafc"                 # Dark readable text
+font = "sans serif"
+
+[client]
+showErrorDetails = true
+
+[logger]
+level = "info"
+
