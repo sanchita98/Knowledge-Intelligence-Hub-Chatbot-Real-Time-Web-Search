@@ -68,14 +68,16 @@ Groq-powered LLM generates accurate answers
 Responses are displayed progressively
 
 🧰 Tools & Technologies
-Area	Tool
-Programming	Python
-AI Model	Groq (ChatGroq)
-Text Embeddings	HuggingFace Models
-Vector Index	FAISS
-Web Lookup	Tavily
-Frontend	Streamlit
-AI Framework	LangChain
+| Area            | Tool               |
+| --------------- | ------------------ |
+| Programming     | Python             |
+| AI Model        | Groq (ChatGroq)    |
+| Text Embeddings | HuggingFace Models |
+| Vector Index    | FAISS              |
+| Web Lookup      | Tavily             |
+| Frontend        | Streamlit          |
+| AI Framework    | LangChain          |
+
 🗃️ Folder Layout
 .
 ├── app.py                     # Main Streamlit application
@@ -96,6 +98,7 @@ AI Framework	LangChain
 │   └── vector_db/             # Stored FAISS index
 ├── requirements.txt
 └── README.md
+
 
 ⚙️ Installation Guide
 🪜 Step 1: Download the Code
@@ -130,3 +133,4 @@ streamlit run app.py
 
 
 Your chatbot will open in the browser and be ready to use 🚀
+
