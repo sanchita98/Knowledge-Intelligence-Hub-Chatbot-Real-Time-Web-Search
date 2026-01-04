@@ -79,23 +79,24 @@ Responses are displayed progressively
 | AI Framework    | LangChain          |
 
 🗃️ Folder Layout
+
 .
-├── app.py                     # Main Streamlit application
+├── app.py                     # Streamlit entry point
 ├── config/
-│   └── settings.py            # Global settings & API keys
+│   └── settings.py            # Centralized configuration & secrets
 ├── core/
-│   ├── document_loader.py     # File loading & text splitting
-│   ├── embedding_engine.py    # Embedding logic
-│   ├── faiss_manager.py       # Vector index handling
-│   └── rag_pipeline.py        # Retrieval and generation flow
+│   ├── document_processor.py  # Document loading & chunking
+│   ├── embeddings.py          # Embedding generation
+│   ├── vector_store.py        # FAISS index management
+│   └── chain.py               # RAG orchestration
 ├── tools/
-│   └── web_search.py          # Tavily integration
+│   └── tavily_search.py       # Web search integration
 ├── ui/
-│   ├── layout.py              # UI structure
-│   └── chat_ui.py             # Chat handling
+│   ├── components.py          # Reusable UI components
+│   └── chat_interface.py      # Chat orchestration logic
 ├── data/
-│   ├── uploads/               # User documents
-│   └── vector_db/             # Stored FAISS index
+│   ├── documents/             # Uploaded documents
+│   └── faiss_index/           # Persisted FAISS index
 ├── requirements.txt
 └── README.md
 
@@ -133,4 +134,5 @@ streamlit run app.py
 
 
 Your chatbot will open in the browser and be ready to use 🚀
+
 
